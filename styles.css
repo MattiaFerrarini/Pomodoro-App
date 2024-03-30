@@ -1,0 +1,138 @@
+html {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, #87CEEB, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+    padding: 1em;
+    font-size: 125%;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+header img {
+    height: 60px;
+}
+
+#studyForm {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px #AAA;
+}
+
+#inputFields {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 1em;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+#inputFields input {
+    text-align: center;
+}
+
+#controlButton {
+    background: rgb(41, 121, 41);
+    color: white;
+    border: 0px;
+    font-size: 115%;
+    height: 60%;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px #505050;
+}
+
+#controlButton:hover {
+    cursor: pointer;
+    background: rgb(32, 99, 32);
+}
+
+#timer {
+    font-size: 125%;
+    margin: 1em
+}
+
+#timer h1, h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+#animationSpace {
+    background: linear-gradient(to top, #87CEEB, #ffffff);
+    position: relative;
+    margin: 2em;
+    max-width: 800px;
+    width: 100%;
+    height: 30vw;
+    max-height: 300px;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 10px; 
+}
+
+#darkener {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+#ground {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 85%;
+}
+
+#grass {
+    position: absolute;
+    width: 100%;
+    bottom: 14%;
+}
+
+#ant {
+    z-index: 3;
+    position: absolute;
+    width: 18%;
+    bottom: 5%;
+    left: 0%
+}
+
+#tomato {
+    z-index: 2;
+    position: absolute;
+    height: 50%;
+    bottom: 5%;
+    left: 13%
+}
+
+@media (min-width: 1000px) {
+    #studyForm {
+        flex-direction: row;
+    } 
+}
