@@ -1,6 +1,6 @@
 :root {
-    --main-bg-color-day: linear-gradient(to top, #87CEEB, #ffffff);
-    --main-bg-color-night: linear-gradient(to top, #040040, #ffffff);
+    --main-bg-color-day: #87CEEB;
+    --main-bg-color-night: #2c2956;
 }
 
 html {
@@ -12,15 +12,17 @@ html {
 
 body {
     min-height: 100vh;
-    background: var(--main-bg-color-day);
+    background-color: var(--main-bg-color-day);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: background-color 3s ease;
 }
 
 header {
     display: flex;
     align-items: center;
+    text-align: center;
     margin-top: 1.5em;
     padding: 1em;
     font-size: 125%;

@@ -15,15 +15,18 @@ async function animateStudy(){
 
     for(var i = 0; i < cyclesNumber; i++){
         // work animation
+        makeDay();
         startWorkingAnimations(studyTime*60);
         await startTimer(studyTime, "Working");
 
         // rest animation
+        makeNight();
         stopWorkingAnimations(restTime*60);
         await startTimer(restTime, "Resting");
     }
 
-    // show button
+    // reset starting style
+    makeDay();
     document.getElementById("controlButton").style.display = "block";
 }
 
@@ -52,6 +55,14 @@ function stopWorkingAnimations(nightLength){
     // animation to lighten environment
     document.getElementById("darkener").style.animation = "sunriseAnimation " + nightLength + "s ease-in-out";
     document.getElementById("darkener").style.animationFillMode = "";
+}
+
+function makeDay(){
+    document.body.style.setProperty('background-color', 'var(--main-bg-color-day)');
+}
+
+function makeNight(){
+    document.body.style.setProperty('background-color', 'var(--main-bg-color-night)');
 }
 
 function startTimer(minutes, activity) {
