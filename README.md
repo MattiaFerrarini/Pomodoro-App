@@ -1,4 +1,4 @@
-# Pomodoro App
+# Pomodoro Website
 
 A website implementing the Pomodoro method and including CSS animations. Developed as an exercise for the Web Technologies course at University of Bologna. See it live here: https://mattiaferrarini.github.io/Pomodoro-App/.
 
