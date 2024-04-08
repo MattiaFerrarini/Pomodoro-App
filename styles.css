@@ -1,6 +1,8 @@
 :root {
     --main-bg-color-day: #87CEEB;
-    --main-bg-color-night: #2c2956;
+    --main-bg-color-night: #212035;
+    --main-header-color-day: #4A4A4A;
+    --main-header-color-night: #bbbbbb;
 }
 
 html {
@@ -26,6 +28,8 @@ header {
     margin-top: 1.5em;
     padding: 1em;
     font-size: 125%;
+    color: var(--main-header-color-day);
+    transition: color 3s ease;
 }
 
 header h1 {
@@ -166,5 +170,6 @@ header img {
 
 @keyframes sunriseAnimation {
     0% { opacity: 0.5; }
+    75% {opacity: 0.5; }
     100% { opacity: 0; }
 }

@@ -59,10 +59,12 @@ function stopWorkingAnimations(nightLength){
 
 function makeDay(){
     document.body.style.setProperty('background-color', 'var(--main-bg-color-day)');
+    document.querySelector('header').style.setProperty('color', 'var(--main-header-color-day)');
 }
 
 function makeNight(){
     document.body.style.setProperty('background-color', 'var(--main-bg-color-night)');
+    document.querySelector('header').style.setProperty('color', 'var(--main-header-color-night)');
 }
 
 function startTimer(minutes, activity) {
